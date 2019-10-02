@@ -1,10 +1,10 @@
-const Room = function (squareMetres, isPainted) {
-  this.squareMetres = squareMetres;
-  this.isPainted = isPainted;
-}
+const Room = function (areaInSquareMeters) {
+  this.areaInSquareMeters = areaInSquareMeters;
+  this.isPainted = false;
+};
 
-Room.prototype.getPainted = function(){
+Room.prototype.paint = function () {
   this.isPainted = true;
-}
+};
 
 module.exports = Room;
